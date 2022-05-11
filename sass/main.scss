@@ -1,3 +1,22 @@
 @import "vars";
 @import "mixin";
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 30px;
+    color: black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    
+}
+main{
+    background-image: url(https://wallpapercave.com/wp/wp5642488.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 2000px;
+}
