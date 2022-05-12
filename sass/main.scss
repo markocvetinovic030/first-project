@@ -1,60 +1,52 @@
 @import "vars";
 @import "mixin";
 
+* {
+    font-family: $font1;
+}
+
 
 html {
     scroll-behavior: smooth;
 }
 
 header {
-    padding: 30px;
-    color: white;
-    text-align: center;
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid white;
 
     .container {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
+        background: transparent;
 
-        #search {
-            float: left;
-
-            input {
-                height: 30px;
-                width: 230px;
-                border: none;
-                text-align: center;
-                border-radius: 30px;
-                outline: none;
-
-                &:hover {
-                    background-color: aliceblue;
-                    transition: 2s all;
-                }
-            }
+        #whitelogo{
+            width: 150px;
+            margin-right: 100px;
+            transform: translate(0%, 40%);
+        }
+        #blacklogo{
+            display: none;
+            width: 150px;
+            margin-right: 100px;
+            transform: translate(0%, 40%);
         }
 
-     
-
         nav {
-            float: right;
+            width: 50%;
+            padding: 40px 0px 30px 0px;
+            display: inline-block;
 
             ul {
                 display: flex;
                 justify-content: space-between;
-                gap: 100px;
 
                 li {
-                    padding-top: 5px;
-
                     a {
                         text-decoration: none;
-                        font-size: 20px;
                         color: white;
-                        padding-bottom: 7px;
-                       
+                        padding: 10px;
+                        font-family: $font1;
+
                         &:hover {
                             border-bottom: 1px solid white;
                             transition: 1s all;
@@ -65,13 +57,49 @@ header {
         }
     }
 
+    .register{
+        float: right;
+        padding: 30px 0px 30px 0px;
+        #signup{
+            width: 130px;
+            height: 35px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow: 3px 3px gray;
+                transition: 1s all;
+                background-color: gainsboro;
+            }
+        }
+
+        #login{
+            width: 130px;
+            height: 35px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-left: 10px;
+            &:hover{
+                box-shadow: 3px 3px gray;
+                transition: 1s all;
+                background-color: gainsboro;
+            }
+        }
+    }
 }
 
 main {
-    background-image: url(https://wallpapercave.com/wp/wp5642488.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 2000px;
+    #backgroundimage {
+        background-image: url(https://wallpapercave.com/wp/wp2659685.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 1000px;
+        background-attachment: fixed;
+    }
 
-
+    #test{
+        max-width: 500px;
+    }
 }
