@@ -13,18 +13,19 @@ html {
 header {
     position: fixed;
     width: 100%;
+    background: transparent;
 
     .container {
-        width: 80%;
-        margin: 0 auto;
-        background: transparent;
+        @include container;
 
-        #whitelogo{
+
+        #whitelogo {
             width: 150px;
             margin-right: 100px;
             transform: translate(0%, 40%);
         }
-        #blacklogo{
+
+        #blacklogo {
             display: none;
             width: 150px;
             margin-right: 100px;
@@ -44,12 +45,13 @@ header {
                     a {
                         text-decoration: none;
                         color: white;
-                        padding: 10px;
+                        padding: 8px;
                         font-family: $font1;
 
                         &:hover {
-                            border-bottom: 1px solid white;
-                            transition: 1s all;
+
+                            font-weight: bold;
+                            transition: 0.1s all;
                         }
                     }
                 }
@@ -57,31 +59,33 @@ header {
         }
     }
 
-    .register{
+    .register {
         float: right;
         padding: 30px 0px 30px 0px;
-        #signup{
+
+        #signup {
             width: 130px;
             height: 35px;
             border: none;
             border-radius: 30px;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 box-shadow: 3px 3px gray;
                 transition: 1s all;
                 background-color: gainsboro;
             }
         }
 
-        #login{
+        #login {
             width: 130px;
             height: 35px;
             border: none;
             border-radius: 30px;
             cursor: pointer;
             margin-left: 10px;
-            &:hover{
+
+            &:hover {
                 box-shadow: 3px 3px gray;
                 transition: 1s all;
                 background-color: gainsboro;
@@ -92,14 +96,79 @@ header {
 
 main {
     #backgroundimage {
-        background-image: url(https://wallpapercave.com/wp/wp2659685.jpg);
+        background-image: url(https://images.designtrends.com/wp-content/uploads/2015/11/30144655/Simple-Plain-Background6.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         padding-bottom: 1000px;
         background-attachment: fixed;
+
+        .center {
+            display: block;
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 450px;
+
+            h1 {
+                font-size: 50px;
+                color: white;
+                font-weight: bold;
+                font-family: $font1;
+                padding-bottom: 200px;
+            }
+
+            a{
+                text-decoration: none;
+                font-size: 16px;
+                color: white;
+
+                &:hover{
+                    font-weight: bold;
+                    transition: 1s all;
+                    border-bottom: 1px solid white;
+                    padding-bottom: 10px
+                }
+            }
+        }
+
     }
 
-    #test{
-        max-width: 500px;
+
+    #firstcontent {
+        .container {
+            @include container;
+
+            .flex {
+                @include flexcontent;
+
+                .rightcontent {
+                    padding: 400px 0px 200px 100px;
+
+                    img {
+                        width: 500px;
+                    }
+                }
+
+                .leftcontent{
+                    text-align: center;
+                    padding: 200px 160px 200px 0px;
+                    
+                    h2{
+                        font-size: 30px;
+                        font-weight: bold;
+                        padding-bottom: 60px;
+                    }
+                    p{
+                        max-width: 600px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
     }
+
+
 }
+
+
+

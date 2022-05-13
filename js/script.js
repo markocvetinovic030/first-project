@@ -50,5 +50,7 @@ window.onscroll = function () {
 };
 
 
-
+signup.addEventListener('click', ()=> {
+    location.replace('../pages/signup.html')
+})
 
