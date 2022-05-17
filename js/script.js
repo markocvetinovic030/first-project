@@ -9,6 +9,8 @@ let third = document.querySelector("#third");
 let fourth = document.querySelector("#fourth");
 let fifth = document.querySelector("#fifth");
 let sixth = document.querySelector("#sixth");
+let signupLink = document.querySelector("#signuplink")
+let loginlink = document.querySelector("#loginlink")
 
 
 
@@ -26,10 +28,9 @@ window.onscroll = function () {
         login.style.color = 'white';
         login.style.transition = '0.5s all'
         signup.style.border = '1px solid black';
-        whitelogo.style.display = 'none'
-        blacklogo.style.display = 'inline-block'
-        
-
+        whitelogo.style.display = 'none';
+        blacklogo.style.display = 'inline-block';
+        loginlink.style.color = 'white';
     } else {
         myNav.style.backgroundColor = 'transparent';  
         myNav.style.transition = '1s all'; 
@@ -43,14 +44,12 @@ window.onscroll = function () {
         login.style.color = 'black';
         login.style.transition = '0.5s all'
         signup.style.border = 'none';
-        whitelogo.style.display = 'inline-block'
-        blacklogo.style.display = 'none' 
-     
+        whitelogo.style.display = 'inline-block';
+        blacklogo.style.display = 'none';
+        loginlink.style.color = 'black';
     }
 };
 
 
-signup.addEventListener('click', ()=> {
-    location.replace('../pages/signup.html')
-})
+
 

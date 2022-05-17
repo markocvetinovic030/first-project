@@ -75,6 +75,12 @@ header {
                 transition: 1s all;
                 background-color: gainsboro;
             }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
         }
 
         #login {
@@ -90,12 +96,17 @@ header {
                 transition: 1s all;
                 background-color: gainsboro;
             }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
         }
     }
 }
 
 main {
-    #backgroundimage {
+    .backgroundimage {
         background-image: url(https://images.designtrends.com/wp-content/uploads/2015/11/30144655/Simple-Plain-Background6.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -117,12 +128,12 @@ main {
                 padding-bottom: 200px;
             }
 
-            a{
+            a {
                 text-decoration: none;
                 font-size: 16px;
                 color: white;
 
-                &:hover{
+                &:hover {
                     font-weight: bold;
                     transition: 1s all;
                     border-bottom: 1px solid white;
@@ -149,16 +160,17 @@ main {
                     }
                 }
 
-                .leftcontent{
+                .leftcontent {
                     text-align: center;
                     padding: 200px 160px 200px 0px;
-                    
-                    h2{
+
+                    h2 {
                         font-size: 30px;
                         font-weight: bold;
                         padding-bottom: 60px;
                     }
-                    p{
+
+                    p {
                         max-width: 600px;
                         line-height: 25px;
                     }
@@ -171,4 +183,132 @@ main {
 }
 
 
+.signupformbackground {
+    background-image: url(https://images.designtrends.com/wp-content/uploads/2015/11/30144655/Simple-Plain-Background6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 337px;
+    background-attachment: fixed;
+}
 
+#formframe {
+    width: 500px;
+    height: 800px;
+    background-color: white;
+    transform: translate(150%, 10%);
+}
+
+#signupform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    h1 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 300px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+
+
+    div {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+
+        ul {
+            li {
+                font-size: 12px;
+                color: red;
+                padding-top: 10px;
+
+            }
+        }
+
+        label {
+            display: block;
+            padding-bottom: 10px;
+            font-size: 15px;
+        }
+
+        input {
+            height: 40px;
+            width: 260px;
+            border: none;
+            border-radius: 20px;
+            background-color: $skyblue;
+            padding-left: 30px;
+            outline: none;
+        }
+
+        button {
+            background-color: $skyblue;
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 40px;
+            border-radius: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                background-color: $skyblue2;
+                transition: 1.5s all;
+
+            }
+        }
+
+    }
+}
+
+#searchframe {
+    padding-top: 150px;
+    text-align: center;
+  
+    #searchdiv {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: white;
+        padding: 40px;
+        border: 2px solid $skyblue2;
+        border-radius: 100px;
+        input{
+           
+           border:2px solid $skyblue2;
+           border-radius: 100px;
+           height: 40px;
+           width: 300px;
+           padding-left: 100px; 
+           outline: none;
+           color: $skyblue2;
+           font-size: 18px;
+        }
+        label {
+            display: block;
+            padding-bottom: 30px;
+            color: $skyblue2;
+            font-size: 30px;
+        }
+        #inputbtn{
+            padding: 0px;
+            width: 150px;
+            font-size: 15px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            color: $skyblue2;
+            background-color: white;
+            font-weight: bold;
+            &:hover{
+                background-color: $skyblue2;
+                color: white;
+                transition: 1s all;
+            }
+        }
+    }
+}
